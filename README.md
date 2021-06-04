@@ -18,4 +18,4 @@ The program will randomize soccer match results. It will randomly pick two teams
 ### Specifics:
 - I have chosen the Dutch soccer league with 18 soccer teams;
 - A match can only be played on Friday, Saturday or Sunday.
-- The possible adjectives are: magnificent, disastrous, exciting, wonderful, horrible, boring, awesome, beautiful.
+- The possible adjectives are: magnificent, disastrous, exciting, wonderful, horrible, exhilarating, awesome, beautiful.

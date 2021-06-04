@@ -4,21 +4,22 @@ const days = ["Friday", "Saturday", "Sunday"];
 const adjectives = ["magnificent", "disastrous", "exciting", "wonderful", "horrible", "exhilarating", "awesome", "beautiful"];
 
 const randomInt = max => Math.floor(Math.random() * max);
-const teamLength = soccerTeams.length;
-const dayLength = days.length;
-const adjLength = adjectives.length;
 
 const generateMessage = () => {
     //pick random teams
+    const teamLength = soccerTeams.length;
     const teamA = soccerTeams[randomInt(teamLength)];
     const teamB = soccerTeams[randomInt(teamLength)];
     if (teamA === teamB) return generateMessage();
 
-    const scoreA = randomInt(5);
-    const scoreB = randomInt(5);
-    const day = days[randomInt(dayLength)];
-    const adjective = adjectives[randomInt(adjLength)];
+    //pick remaining message components
+    const maxScore = 5;
+    const scoreA = randomInt(maxScore);
+    const scoreB = randomInt(maxScore);
+    const day = days[randomInt(days.length)];
+    const adjective = adjectives[randomInt(adjectives.length)];
 
+    //Generate message based on match outcome
     let message = "";
     switch(true) {
         case scoreA > scoreB: message += `${teamA} defeated ${teamB} `; break;

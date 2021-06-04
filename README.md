@@ -13,8 +13,9 @@ For this project, you will build a message generator program. Every time a user 
 - Command line
 
 ## Topic:
-The program will randomize soccer match results. It will randomly pick two teams from a soccer league and generate a random score and random day and comment. Based on the score the message will be either "TeamA defeated TeamB with X-Y on [day]. It was [adjective]!" or "TeamA and TeamB tied with Z-Z on [day]! It was [adjective]!".
+The program will randomize soccer match results. It will randomly pick two teams from a soccer league and generate a random score and random day and adjective. Based on the score the message will be either "TeamA defeated TeamB with X-Y on [day]. It was [adjective]!" or "TeamA and TeamB tied with Z-Z on [day]! It was [adjective]!".
 
 ### Specifics:
 - I have chosen the Dutch soccer league with 18 soccer teams;
 - A match can only be played on Friday, Saturday or Sunday.
+- The possible adjectives are: magnificent, disastrous, exciting, wonderful, horrible, boring, awesome, beautiful.
